@@ -8,7 +8,7 @@ describe('Logout test-saucedemo', () => {
     cy.get('#react-burger-menu-btn').click()
     cy.get('#logout_sidebar_link').click();
 
-  //  cy.get('#login_button').should('be.visible');
+    cy.get('#login-button', { timeout: 10000 }).should('be.visible');
     
   })
 })
