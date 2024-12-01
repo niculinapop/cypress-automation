@@ -1,10 +1,10 @@
-describe('Valid login test-saucedemo', () => {
-  it('should logged in successfully', () => {
-    cy.visit('https://www.saucedemo.com/');
-    cy.get('#user-name').type('standard_user');
-    cy.get('#password').type('secret_sauce');
-    cy.get('#login-button').click();
+const {WEB} = require('../locators/locatorPath');
+import Login from '../helpers/login';
 
-    cy.xpath('//*[@id="shopping_cart_container"]/a').should('be.visible');
+describe('Valid login test-saucedemo', () => {
+  it('should logged in successfully',async () => {
+    await Login.login();
+
+    cy.xpath(WEB.CART.CART_LINK).should('be.visible');
   })
 })
