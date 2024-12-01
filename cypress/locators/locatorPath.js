@@ -6,7 +6,8 @@ const WEB = {
   },
   CART: {
     ADD_TO_CART_BUTTON: "#add-to-cart-sauce-labs-backpack",
-    CART_LINK: '//*[@id="shopping_cart_container"]/a'
+    CART_LINK: '//*[@id="shopping_cart_container"]/a',
+    REMOVE_BUTTON: '#remove-sauce-labs-backpack'
   },
   MESSAGE: {
     ERROR_MESSAGE: '.error-message-container.error'
