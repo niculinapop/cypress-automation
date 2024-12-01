@@ -9,8 +9,17 @@ const WEB = {
     CART_LINK: '//*[@id="shopping_cart_container"]/a',
     REMOVE_BUTTON: '#remove-sauce-labs-backpack'
   },
+  CHECKOUT: {
+    CHECKOUT_BUTTON: '#checkout',
+    FIRST_NAME_INPUT: '#first-name',
+    LAST_NAME_INPUT: '#last-name',
+    POSTAL_CODE_INPUT: '#postal-code',
+    CONTINUE_BUTTON: '#continue',
+    FINISH_BUTTON: '#finish'
+  },
   MESSAGE: {
-    ERROR_MESSAGE: '.error-message-container.error'
+    ERROR_MESSAGE: '.error-message-container.error',
+    CHECKOUT_COMPLETE_MESSAGE: '//*[@id="checkout_complete_container"]/h2'
   },
   MENU: {
     MENU_BUTTON: '#react-burger-menu-btn',
