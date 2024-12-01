@@ -1,13 +1,13 @@
+const {WEB} = require('../locators/locatorPath');
+import Login from '../helpers/login';
+
 describe('Menu button functionality', () => {
-  it('should open and close the side menu', () => {
-    cy.visit('https://www.saucedemo.com/', {timeout : 30000});
-    cy.get('#user-name').type('standard_user');
-    cy.get('#password').type('secret_sauce');
-    cy.get('#login-button', { timeout: 10000 }).should('be.visible').click();
-    cy.get('#react-burger-menu-btn').click();
-    cy.get('#react-burger-cross-btn').click();
+  it('should open and close the side menu',async () => {
+    await Login.login();
+    cy.get(WEB.MENU.MENU_BUTTON).click();
+    cy.get(WEB.MENU.CROSS_BUTTON).click();
    
-    cy.get('#react-burger-menu-btn').should('be.visible');
+    cy.get(WEB.MENU.MENU_BUTTON).should('be.visible');
     
   })
 })
