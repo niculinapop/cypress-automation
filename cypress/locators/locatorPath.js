@@ -26,7 +26,8 @@ const WEB = {
     MENU_BUTTON: '#react-burger-menu-btn',
     LOGOUT_BUTTON: '#logout_sidebar_link',
     CROSS_BUTTON: '#react-burger-cross-btn',
-    ABOUT_BUTTON: '#about_sidebar_link'
+    ABOUT_BUTTON: '#about_sidebar_link',
+    RESET_APP_STATE_BUTTON: '#reset_sidebar_link'
   },
   PRODUCT: {
     PRODUCT_LINK: '//*[@id="item_4_title_link"]/div',
